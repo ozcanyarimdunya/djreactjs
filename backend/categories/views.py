@@ -20,8 +20,7 @@ class CategoryCreateApiView(CreateAPIView):
     serializer_class = CategoryCreateUpdateSerializer
 
     def perform_create(self, serializer):
-        from django.contrib.auth.models import User
-        serializer.save(user=User.objects.first())
+        serializer.save(user=self.request.user)
 
 
 class CategoryDetailApiView(RetrieveAPIView):
