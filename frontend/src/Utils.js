@@ -1,6 +1,7 @@
 const api = {
     categories: "/category/",
-    task: "/task/"
+    task: "/task/",
+    token: "/user/get-token/"
 };
 
 export default api;
