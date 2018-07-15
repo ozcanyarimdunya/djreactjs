@@ -14,7 +14,7 @@ class List extends Component {
         fetch(api.categories, {})
             .then(resp => resp.json())
             .then(data => {
-                this.setState({categories: data})
+                this.setState({categories: data.results})
             })
             .catch(error => console.log(error));
     }

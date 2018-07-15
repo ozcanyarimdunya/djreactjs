@@ -1,8 +1,6 @@
-const base = "http://127.0.0.1:8000";
-
 const api = {
-    categories: base + "/category/",
-    task: base + "/task/"
+    categories: "/category/",
+    task: "/task/"
 };
 
 export default api;
